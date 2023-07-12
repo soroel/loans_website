@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="icon" href=".\download.png">
+    <link rel="stylesheet" href=".\loginstyle.css">
+    <script src="https://code.jQuery.com/jquery-3.1.1.js"></script>
+    <script src="logindetails.js"></script>
+</head>
+
+<body>
+    <form action="">
+        <div class="container" id="login">
+
+            <div class="form">
+                <img src="https://i.postimg.cc/zDyt7KCv/a1.jpg" class="avatar" alt="Avatar">
+                <h2>Sign In</h2>
+                <input type="text" class="name" id="uname" placeholder="Username" required>
+                <input type="password" class="upass" id="password" placeholder="User password" required>
+                <p id="cred"></p>
+                <button class="login" id="log" onclick="login()" type="">LOGIN</button>
+                <p>Don't have an account?&nbsp<a id="up" href=".\signup.html">Sign Up</a> <br>
+                    <br><br>
+                </p>
+                <button class="remind">Forgot Password?</button>
+
+            </div>
+        </div>
+    </form>
+    <form action="">
+        <div class="container" id="sign-up" style="display:none;">
+            <div class="form">
+                <h2>Sign Up</h2>
+                <input type="text" class="name" id="name" placeholder="Username" name="username" required>
+                <input type="text" class="email" placeholder="E-mail" name="email" required>
+                <input type="password" class="password" id="pass" placeholder="User password" name="psw" required>
+                <input type="password" class="repeatPassword" id="repPass" placeholder="Repeat password" required>
+                <button class="sign" id="sign" type="submit">&nbsp Sign Up</button>
+                <p>Already have an account?<a id="in" href=" .\login.html ">Sign In</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
